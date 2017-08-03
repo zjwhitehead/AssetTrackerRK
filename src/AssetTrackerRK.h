@@ -38,6 +38,8 @@ public:
 
 	String readLatLon(void);
 
+	double readSpeedMPH(void);
+
 	bool setupLowPowerWakeMode(uint8_t movementThreshold = 16);
 	uint8_t clearAccelInterrupt();
 	bool calibrateFilter(unsigned long stationaryTime, unsigned long maxWaitTime = 0);

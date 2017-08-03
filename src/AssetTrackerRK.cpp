@@ -81,6 +81,10 @@ float AssetTracker::readLon(void) {
 	return (float) gps.location.lng();
 }
 
+double AssetTracker::readSpeedMPH(void) {
+	return (double) gps.speed.mph();
+}
+
 bool AssetTracker::gpsFix(void) {
 	return gps.location.isValid();
 }
